@@ -1,0 +1,15 @@
+html
+  head
+    title= title
+  body
+    h1= message
+    h2= 'view inside books'
+    table
+      each book in books
+        tr
+          td
+            a(href=`books/${book._id}`)= book._id
+          td
+            div= book.title
+          td
+            div= book.author

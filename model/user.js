@@ -1,0 +1,4 @@
+exports.User = {
+    name:'',
+    lastname: ''
+};
