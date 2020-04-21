@@ -32,7 +32,7 @@ router.post('/',async function(req,res,next){
 
   const book = new db.Book(model);
 
-  book.save().then(() => res.send(model));
+  book.save().then(() => res.send(book._id));
 });
 
 module.exports = router;
